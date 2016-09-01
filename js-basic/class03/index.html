@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Class 03</title>
+    <style text="text/css">
+      body{
+        background-color: #000;
+      }
+
+      #div{
+        display: block;
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        background-color: #ffffff;
+      }
+
+      #div-on{
+        display: block;
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        background-color: #ffeb3b;
+      }
+      #div-off{
+        display: block;
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        background-color: #000000;
+      }
+
+    </style>
+
+    <script type="text/javascript">
+    function turn(){
+      window.document.getElementById("div-on").id = "div-off";
+    }
+    </script>
+
+  </head>
+  <body onload="alert('carregado')">
+
+    <div onclick="turn()" id="div-on">
+      <p>JS Class 03</p>
+    </div>
+
+    <div onmouseover="alert('ola')" id="div">
+      <p>JS Class 03</p>
+    </div>
+
+    <div onclick="alert('ola')" id="div">
+      <p>JS Class 03</p>
+    </div>
+  </body>
+</html>
